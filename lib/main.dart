@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:smart_station/features/splash/presentation/view/splash_view.dart';
 
 void main() {
   runApp(const SmartStation());
@@ -9,8 +10,8 @@ class SmartStation extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Container(),
+    return const MaterialApp(
+      home: SplashView(),
     );
   }
 }
