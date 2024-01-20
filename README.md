@@ -31,5 +31,5 @@
 
 Clone the repository
 ```shell
-
+gh repo clone Auto-Flags/Smart-Station
 ```
