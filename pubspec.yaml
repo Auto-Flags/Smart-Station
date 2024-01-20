@@ -35,7 +35,10 @@ dependencies:
   flutter_native_splash: ^2.3.9
 flutter_native_splash:
   color: "#E46E00"
-  
+  image: assets/images/app_icon.png
+  android_gravity: [center, resize=200%]
+
+
 dev_dependencies:
 
   # The "flutter_lints" package below contains a set of recommended lints to
