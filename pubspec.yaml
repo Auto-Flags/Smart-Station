@@ -34,9 +34,13 @@ dependencies:
   shared_preferences: ^2.2.2
   flutter_native_splash: ^2.3.9
 flutter_native_splash:
-  color: "#E46E00"
+  color: "#000000"
   image: assets/images/app_icon.png
-  android_gravity: [center, resize=200%]
+  android_gravity:  fill
+  # color_dark: "#042a49"
+  # branding: assets/images/app_icon.png
+  # image_dark: assets/images/app_icon.png
+  # icon_background_color: "#000000"
 
 
 dev_dependencies:
