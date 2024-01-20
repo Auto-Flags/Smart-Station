@@ -35,7 +35,7 @@ dependencies:
   flutter_native_splash: ^2.3.9
 flutter_native_splash:
   color: "#000000"
-  image: assets/images/app_icon.png
+  image: assets/images/Group 150 (2).png
   android_gravity:  fill
   # color_dark: "#042a49"
   # branding: assets/images/app_icon.png
