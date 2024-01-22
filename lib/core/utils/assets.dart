@@ -1,9 +1,13 @@
 class Assets {
   Assets._();
   
-  /// Assets for imagesAppIcon
-  /// assets/images/app_icon.png
-  static const String imagesAppIcon = "assets/images/app_icon.png";
+  /// Assets for imagesAndroid12Splash
+  /// assets/images/android_12_splash.png
+  static const String imagesAndroid12Splash = "assets/images/android_12_splash.png";
+
+  /// Assets for imagesAppIcon 
+  /// assets/images/app_icon .png
+  static const String imagesAppIcon  = "assets/images/app_icon .png";
 
   /// Assets for imagesAppOnBoarding1
   /// assets/images/app_on_boarding_1.png

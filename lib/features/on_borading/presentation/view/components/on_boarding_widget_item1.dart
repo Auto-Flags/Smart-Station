@@ -19,17 +19,12 @@ class OnBoardingWidgetItem1 extends StatelessWidget {
           height: 60,
         ),
         Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 8),
+          padding: const EdgeInsets.symmetric(horizontal: 16),
           child: Text(
             model.title,
-            style: Styles.changaBold20
-                .copyWith(color: AppColors.primaryColor, shadows: [
-              const Shadow(
-                offset: Offset(1.0, 3.0),
-                blurRadius: 4.0,
-                color: Color.fromARGB(255, 0, 0, 0),
-              ),
-            ]),
+            style: Styles.changaBold20.copyWith(
+              color: AppColors.primaryColor2,
+            ),
             textAlign: TextAlign.center,
           ),
         ),
@@ -38,6 +33,8 @@ class OnBoardingWidgetItem1 extends StatelessWidget {
         ),
         Image.asset(
           model.image,
+          height: MediaQuery.sizeOf(context).height * .55,
+          width: double.infinity,
         ),
       ],
     );

@@ -16,6 +16,7 @@ class OnBoardingCubit extends Cubit<OnBoardingState> {
   final controller = LiquidController();
   final List<Widget> pages = [
     CustomOnBoardingWidget(
+      color: AppColors.blackColor,
       anotherPosission: false,
       model: OnBoardingModel(
         image: Assets.imagesAppOnBoarding1,
@@ -30,7 +31,7 @@ class OnBoardingCubit extends Cubit<OnBoardingState> {
       ),
     ),
     CustomOnBoardingWidget(
-      color: AppColors.whiteColor,
+      alignment: Alignment.centerLeft,
       anotherPosission: false,
       model: OnBoardingModel(
         image: Assets.imagesAppOnBoarding3,
