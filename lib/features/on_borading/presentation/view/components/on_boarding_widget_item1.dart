@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_animate/flutter_animate.dart';
 import 'package:smart_station/core/utils/color.dart';
 import 'package:smart_station/core/utils/style.dart';
 import 'package:smart_station/features/on_borading/data/model/on_boarding_model.dart';
@@ -26,16 +27,19 @@ class OnBoardingWidgetItem1 extends StatelessWidget {
               color: AppColors.primaryColor2,
             ),
             textAlign: TextAlign.center,
-          ),
+          ).animate().slide(duration: const Duration(seconds: 1), begin: const Offset(-1, 0), end: Offset.zero),
         ),
         const SizedBox(
           height: 8,
         ),
-        Image.asset(
-          model.image,
-          height: MediaQuery.sizeOf(context).height * .55,
-          width: double.infinity,
-        ),
+        Animate(
+          effects: const [FadeEffect(), ScaleEffect()],
+          child: Image.asset(
+            model.image,
+            height: MediaQuery.sizeOf(context).height * .55,
+            width: double.infinity,
+          ),
+        )
       ],
     );
   }

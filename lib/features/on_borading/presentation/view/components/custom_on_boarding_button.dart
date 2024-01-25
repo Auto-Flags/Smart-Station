@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:smart_station/core/functions/navigation.dart';
 import 'package:smart_station/core/utils/color.dart';
 import 'package:smart_station/core/utils/strings.dart';
 import 'package:smart_station/core/utils/style.dart';
+import 'package:smart_station/features/on_borading/data/function/on_boarding_visited.dart';
 import 'package:smart_station/features/on_borading/presentation/cubit/on_boarding_cubit.dart';
 
 class CustomOnBoardingButton extends StatelessWidget {
@@ -16,7 +18,14 @@ class CustomOnBoardingButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () {
-        cubit.animateToPage();
+        if(cubit.currentPage == 2)
+        {
+          customReplacementNavigate(context, '/HomeView');
+          onBoardingVisited();
+        }else
+        {
+          cubit.animateToPage();
+        }
       },
       child: AnimatedContainer(
           duration: const Duration(milliseconds: 1600),
