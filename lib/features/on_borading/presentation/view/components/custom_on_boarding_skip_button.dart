@@ -3,7 +3,6 @@ import 'package:smart_station/core/utils/color.dart';
 import 'package:smart_station/core/utils/strings.dart';
 import 'package:smart_station/core/utils/style.dart';
 import 'package:smart_station/features/on_borading/presentation/cubit/on_boarding_cubit.dart';
-import 'package:smart_station/features/on_borading/presentation/cubit/on_boarding_state.dart';
 
 class CustomOnBoardingSkipButton extends StatelessWidget {
   const CustomOnBoardingSkipButton({
