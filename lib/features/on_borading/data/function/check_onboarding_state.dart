@@ -8,9 +8,9 @@ void checkOnBoardingState(context)
     bool onBoardingVisited = getIt<CacheHelper>().getData(key: "OnBoardingVisited") ?? false;
     if(onBoardingVisited == true)
     {
-      customReplacementNavigate(context, "/HomeView");
+      delayedNavigate(context, '/HomeView');
     }else
     {
-      customReplacementNavigate(context, "/");
+      delayedNavigate(context, '/onBoardingView');
     }
 }
