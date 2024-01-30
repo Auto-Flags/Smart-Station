@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_sizer/flutter_sizer.dart';
 import 'package:smart_station/core/database/cache/cache_helper.dart';
 import 'package:smart_station/core/router/app_router.dart';
 import 'package:smart_station/core/services/service_locateor.dart';
@@ -16,19 +17,23 @@ class SmartStation extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp.router(
-      debugShowCheckedModeBanner: false,
-      locale:const Locale("ar", "AE"),
-        localizationsDelegates:const[
-          GlobalMaterialLocalizations.delegate,
-          GlobalWidgetsLocalizations.delegate,
-          GlobalCupertinoLocalizations.delegate,
-        ],
-        supportedLocales:const [
-          Locale('en'),
-          Locale('ar'),
-        ],
-      routerConfig: routes
+    return FlutterSizer(
+      builder:(context, orientation, screenType) {
+        return MaterialApp.router(
+        debugShowCheckedModeBanner: false,
+        locale:const Locale("ar", "AE"),
+          localizationsDelegates:const[
+            GlobalMaterialLocalizations.delegate,
+            GlobalWidgetsLocalizations.delegate,
+            GlobalCupertinoLocalizations.delegate,
+          ],
+          supportedLocales:const [
+            Locale('en'),
+            Locale('ar'),
+          ],
+        routerConfig: routes
+      );
+      },
     );
   }
 }

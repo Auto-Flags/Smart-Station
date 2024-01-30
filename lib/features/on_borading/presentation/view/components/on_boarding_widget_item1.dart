@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_animate/flutter_animate.dart';
+import 'package:flutter_sizer/flutter_sizer.dart';
 import 'package:smart_station/core/utils/color.dart';
 import 'package:smart_station/core/utils/style.dart';
 import 'package:smart_station/features/on_borading/data/model/on_boarding_model.dart';
@@ -16,8 +16,8 @@ class OnBoardingWidgetItem1 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        const SizedBox(
-          height: 60,
+        SizedBox(
+          height: 12.h,
         ),
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 16),
@@ -27,18 +27,15 @@ class OnBoardingWidgetItem1 extends StatelessWidget {
               color: AppColors.primaryColor2,
             ),
             textAlign: TextAlign.center,
-          ).animate().slide(duration: const Duration(seconds: 1), begin: const Offset(-1, 0), end: Offset.zero),
+          )
         ),
         const SizedBox(
           height: 8,
         ),
-        Animate(
-          effects: const [FadeEffect(), ScaleEffect()],
-          child: Image.asset(
-            model.image,
-            height: MediaQuery.sizeOf(context).height * .55,
-            width: double.infinity,
-          ),
+        Image.asset(
+          model.image,
+          height: 55.h,
+          width: 100.w,
         )
       ],
     );

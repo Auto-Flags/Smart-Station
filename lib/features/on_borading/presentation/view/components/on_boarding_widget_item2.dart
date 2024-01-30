@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_animate/flutter_animate.dart';
+import 'package:flutter_sizer/flutter_sizer.dart';
 import 'package:smart_station/core/utils/style.dart';
 import 'package:smart_station/features/on_borading/data/model/on_boarding_model.dart';
 
@@ -22,16 +22,10 @@ class OnBoardingWidgetItem2 extends StatelessWidget {
       children: [
         Image.asset(
           model.image,
-          height: MediaQuery.sizeOf(context).height * .64,
+          height: 65.h,
           width: double.infinity,
           alignment: alignment ?? Alignment.centerRight,
-        )
-            .animate()
-            .slide(
-                duration: const Duration(seconds: 1),
-                begin: const Offset(0, -1),
-                end: Offset.zero)
-            .fadeIn(),
+        ),
         const SizedBox(
           height: 8,
         ),
@@ -41,10 +35,7 @@ class OnBoardingWidgetItem2 extends StatelessWidget {
             model.title,
             style: Styles.changaBold20.copyWith(color: color),
             textAlign: TextAlign.center,
-          ).animate().slide(
-              duration: const Duration(seconds: 1),
-              begin: const Offset(-1, 0),
-              end: Offset.zero),
+          )
         )
       ],
     );

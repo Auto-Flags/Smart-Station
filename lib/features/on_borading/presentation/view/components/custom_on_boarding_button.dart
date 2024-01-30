@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_sizer/flutter_sizer.dart';
 import 'package:smart_station/core/functions/navigation.dart';
 import 'package:smart_station/core/utils/color.dart';
 import 'package:smart_station/core/utils/strings.dart';
@@ -29,8 +30,8 @@ class CustomOnBoardingButton extends StatelessWidget {
       },
       child: AnimatedContainer(
           duration: const Duration(milliseconds: 1600),
-          height: 55,
-          width: cubit.currentPage == 2 ? 144 : 55,
+          height: 7.h,
+          width: cubit.currentPage == 2 ? 35.w : 15.w,
           decoration: BoxDecoration(
               borderRadius: cubit.currentPage == 2
                   ? const BorderRadius.all(Radius.circular(24))
@@ -41,16 +42,16 @@ class CustomOnBoardingButton extends StatelessWidget {
                     color: Colors.black26, blurRadius: 3, offset: Offset(1, 4))
               ]),
           child: cubit.currentPage == 2
-              ? const Center(
+              ?  Center(
                   child: Text(
                     AppStrings.enter,
                     style: Styles.changaBold20,
                   ),
                 )
-              : const Icon(
+              :  Icon(
                   Icons.arrow_back_ios_rounded,
                   color: AppColors.whiteColor,
-                  size: 40,
+                  size: 40.dp,
                 )),
     );
   }
