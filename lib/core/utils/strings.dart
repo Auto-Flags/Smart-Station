@@ -16,6 +16,7 @@ abstract class AppStrings {
     ''',
   skip = "تخطي",
   enter = "دخول",
-  appName = "Smart Station";
+  appName = "Smart Station",
+  search = "بحث";
 
 }

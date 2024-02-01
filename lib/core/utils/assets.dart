@@ -3,11 +3,11 @@ class Assets {
   
   /// Assets for imagesAlhgom
   /// assets/images/Alhgom.png
-  static const String imagesAlhgom = "assets/images/Alhgom.png";
+  static const String imagesAlhogom = "assets/images/Alhgom.png";
 
   /// Assets for imagesAlpasla
   /// assets/images/alpasla.png
-  static const String imagesAlpasla = "assets/images/alpasla.png";
+  static const String imagesAlposla = "assets/images/alpasla.png";
 
   /// Assets for imagesAndroid12Splash
   /// assets/images/android_12_splash.png
@@ -35,11 +35,11 @@ class Assets {
 
   /// Assets for imagesHasab Almasfat
   /// assets/images/hasab Almasfat.png
-  static const String imagesHasabAlmasfat = "assets/images/hasab_almasfat.png";
+  static const String imagesHesabAlmasfat = "assets/images/hasab_almasfat.png";
 
   /// Assets for imagesHasab Almashat
   /// assets/images/hasab Almashat.png
-  static const String imagesHasabAlmashat = "assets/images/hasab_almashat.png";
+  static const String imagesHesabAlmesahat = "assets/images/hasab_almashat.png";
 
   /// Assets for imagesHomeHeaderPic
   /// assets/images/home_header_pic.png
@@ -51,6 +51,6 @@ class Assets {
 
   /// Assets for imagesTatal
   /// assets/images/tatal.png
-  static const String imagesTatal = "assets/images/tatal.png";
+  static const String imagesTotal = "assets/images/tatal.png";
 }
 

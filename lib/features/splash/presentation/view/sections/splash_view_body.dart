@@ -3,7 +3,6 @@ import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_sizer/flutter_sizer.dart';
 import 'package:smart_station/core/database/cache/cache_helper.dart';
 import 'package:smart_station/core/functions/navigation.dart';
-import 'package:smart_station/core/functions/size.dart';
 import 'package:smart_station/core/services/service_locateor.dart';
 import 'package:smart_station/core/utils/assets.dart';
 import 'package:smart_station/core/utils/color.dart';
