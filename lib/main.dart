@@ -12,8 +12,6 @@ void main() async{
   runApp(const SmartStation());
 }
 
-// الصور بتاعت العناصر دي محتاجه تتغير وتبقي صور عاديه واحنا نتحكم في الديكوريشن بتاعها براحتنا انما كدا متنفعش يا كينج
-// مساء الفل
 class SmartStation extends StatelessWidget {
   const SmartStation({super.key});
 

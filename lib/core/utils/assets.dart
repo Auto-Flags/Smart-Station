@@ -2,12 +2,12 @@ class Assets {
   Assets._();
   
   /// Assets for imagesAlhgom
-  /// assets/images/Alhgom.png
-  static const String imagesAlhogom = "assets/images/Alhgom.png";
+  /// assets/images/Alhgom.jpg
+  static const String imagesAlhgom = "assets/images/Alhgom.jpg";
 
   /// Assets for imagesAlpasla
   /// assets/images/alpasla.png
-  static const String imagesAlposla = "assets/images/alpasla.png";
+  static const String imagesAlpasla = "assets/images/alpasla.png";
 
   /// Assets for imagesAndroid12Splash
   /// assets/images/android_12_splash.png
@@ -33,24 +33,24 @@ class Assets {
   /// assets/images/app_on_boarding_3_icon.png
   static const String imagesAppOnBoarding3Icon = "assets/images/app_on_boarding_3_icon.png";
 
-  /// Assets for imagesHasab Almasfat
-  /// assets/images/hasab Almasfat.png
-  static const String imagesHesabAlmasfat = "assets/images/hasab_almasfat.png";
+  /// Assets for imagesHasabAlmasfat
+  /// assets/images/hasab_almasfat.jpg
+  static const String imagesHasabAlmasfat = "assets/images/hasab_almasfat.jpg";
 
-  /// Assets for imagesHasab Almashat
-  /// assets/images/hasab Almashat.png
-  static const String imagesHesabAlmesahat = "assets/images/hasab_almashat.png";
+  /// Assets for imagesHasabAlmashat
+  /// assets/images/hasab_almashat.jpg
+  static const String imagesHasabAlmashat = "assets/images/hasab_almashat.jpg";
 
   /// Assets for imagesHomeHeaderPic
   /// assets/images/home_header_pic.png
   static const String imagesHomeHeaderPic = "assets/images/home_header_pic.png";
 
-  /// Assets for imagesTahweal Alwahdat
-  /// assets/images/tahweal Alwahdat.png
-  static const String imagesTahwealAlwahdat = "assets/images/tahweal_alwahdat.png";
+  /// Assets for imagesTahwealAlwahdat
+  /// assets/images/tahweal_alwahdat.jpg
+  static const String imagesTahwealAlwahdat = "assets/images/tahweal_alwahdat.jpg";
 
   /// Assets for imagesTatal
-  /// assets/images/tatal.png
-  static const String imagesTotal = "assets/images/tatal.png";
+  /// assets/images/tatal.jpg
+  static const String imagesTatal = "assets/images/tatal.jpg";
 }
 

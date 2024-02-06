@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_sizer/flutter_sizer.dart';
 import 'package:smart_station/core/utils/color.dart';
 import 'package:smart_station/core/utils/style.dart';
 

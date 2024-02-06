@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_sizer/flutter_sizer.dart';
 import 'package:smart_station/core/utils/assets.dart';
-import 'package:smart_station/core/utils/color.dart';
-import 'package:smart_station/core/utils/strings.dart';
+import 'package:smart_station/features/home/presentation/view/components/custom_search_bar.dart';
 
 class HomeViewTopSection extends StatelessWidget {
   const HomeViewTopSection({
@@ -25,35 +24,9 @@ class HomeViewTopSection extends StatelessWidget {
             ),
             fit: BoxFit.cover),
       ),
-      child: SizedBox(
-        height: 40,
-        child: Stack(
-          clipBehavior: Clip.none,
-          children: [
-            TextField(
-                decoration: InputDecoration(
-                    hintText: AppStrings.search,
-                    prefixIcon: const Icon(Icons.highlight_remove_rounded),
-                    fillColor: AppColors.whiteColor,
-                    filled: true,
-                    border: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(16),
-                        borderSide: BorderSide.none))),
-            const Positioned(
-              left: -2,
-              top: -5,
-              child: CircleAvatar(
-                radius: 24,
-                backgroundColor: AppColors.primaryColor,
-                child: Icon(
-                  Icons.search,
-                  color: AppColors.whiteColor,
-                ),
-              ),
-            )
-          ],
-        ),
-      ),
+      child: const CustomSearchBar(),
     );
   }
 }
+
+
