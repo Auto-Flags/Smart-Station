@@ -9,11 +9,11 @@ class ElementsModel
 }
 
 List<ElementsModel> primaryElements = [
+  ElementsModel(imagePath: Assets.imagesTatal, title: "التوتال"),
+  ElementsModel(imagePath: Assets.imagesTahwealAlwahdat, title: "تحويل الوحدات"),
   ElementsModel(imagePath: Assets.imagesHasabAlmashat, title: "حساب المساحات"),
   ElementsModel(imagePath: Assets.imagesHasabAlmasfat, title: "حساب المسافات"),
   ElementsModel(imagePath: Assets.imagesAlhgom, title: "الحجوم"),
-  ElementsModel(imagePath: Assets.imagesTahwealAlwahdat, title: "تحويل الوحدات"),
-  ElementsModel(imagePath: Assets.imagesTatal, title: "التوتال"),
 ];
 
 List<ElementsModel> subElements = [
