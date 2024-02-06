@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:smart_station/core/utils/color.dart';
 import 'package:smart_station/features/home/presentation/view/sections/home_view_body.dart';
 
 class HomeView extends StatelessWidget {
@@ -13,7 +14,7 @@ class HomeView extends StatelessWidget {
           children: [
             Padding(
               padding: EdgeInsets.only(top: 10),
-              child: CircularProgressIndicator(),
+              child: CircularProgressIndicator(color: AppColors.primaryColor,),
             ),
             HomeViewBody(),
           ],
